@@ -639,29 +639,30 @@
     <button id="btnCloseForm" class="close-button">X</button>
     <h1>Book a session</h1>
     <p>Please type your name and phone number.</p>
-    <form id="contactForm">
+    <form action="contact_mail.php" method="post">
+    <!-- <form id="contactForm"> -->
       <div class="form-group">
-        <input type="text" name="name" class="form-control" placeholder="Name" required="required"/>
+        <input type="text" id="userName" name="userName" class="form-control" placeholder="Name" required="required"/>
       </div>
       <div class="form-group">
-        <input class="form-control" name="email" type="email" placeholder="Email" required="required"/>
+        <input class="form-control" id="userEmail" name="userEmail" type="email" placeholder="Email" required="required"/>
       </div>
       <div class="form-group">
-        <input class="form-control" name="phone" type="tel" placeholder="WhatsApp Number" required="required">
+        <input class="form-control" id="subject" name="subject" type="tel" placeholder="WhatsApp Number" required="required">
       </div>
       <div class="form-group">
-        <textarea class="form-control" disabled>I would like to learn more information and book an individual session.</textarea>
+        <textarea class="form-control" id="contentmsg" name="contentmsg" disabled>I would like to learn more information and book an individual session.</textarea>
       </div>
       <div class="form-group"><br>
       <input type="checkbox" id="privacy" name="privacy" required="required">
         <label for="privacy">I agree to the <a class="gold_color" href="privacypolicy.html">Privacy Policy</a></label></div><br><br>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </div>
 
 <script src="./script.js"></script>
-<script>
+<!-- <script>
     document.getElementById("contactForm").addEventListener("submit", async function (event) {
         event.preventDefault();
         let formData = new FormData(this);
@@ -674,6 +675,6 @@
         let result = await response.json();
         document.getElementById("response").innerText = result.message;
     });
-</script>
+</script> -->
 </body>
 </html>

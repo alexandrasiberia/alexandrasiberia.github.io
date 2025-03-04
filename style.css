@@ -91,15 +91,15 @@
     }
 
 }
-@media (max-width: 839px) {
+@media (max-width: 888px) {
     .hero_title {
         font-size: 46px;
     }
-    .hero {
-        background-size: auto 100%;
-    }
-
-    
+}
+@media (max-width: 680px) {
+  .hero {
+      background-size: auto 100%;
+  } 
 }
 @media (max-width: 533px) {
     .hero_title {
