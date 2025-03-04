@@ -96,7 +96,7 @@
         font-size: 46px;
     }
 }
-@media (max-width: 680px) {
+@media (max-width: 600px) {
   .hero {
       background-size: auto 100%;
   } 
