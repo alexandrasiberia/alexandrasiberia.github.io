@@ -237,7 +237,8 @@ button a{
  margin: 30px;
 }
   li {
-    font-size: 17px !important;
+    font-size: 18px !important;
+    color: rgb(40, 28, 14);
     /* list-style: url("./assets/instagram.png") inside */
   }
   .column.left {
